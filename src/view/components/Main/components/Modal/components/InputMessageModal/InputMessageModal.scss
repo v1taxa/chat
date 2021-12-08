@@ -1,0 +1,35 @@
+@import '/src/view/styles/variables.scss';
+
+.inputMessageModal__wrap {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputMessageModal {
+    width: 94%;
+    position: relative;
+    margin-right: 1rem;
+
+    & textarea {
+        resize: none;
+        background-color: $bg;
+        border-radius: 15px;
+        padding: 1rem 3rem 1rem 1rem;
+        width: 100%;
+    }
+
+    &__sent {
+        background-color: $main;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+        background-image: url(/src/assets/images/svg/sentLogo.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20px;
+        cursor: pointer;
+        align-self: flex-end;
+    }
+}

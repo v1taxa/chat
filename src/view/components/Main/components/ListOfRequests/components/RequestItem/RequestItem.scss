@@ -1,0 +1,105 @@
+@import '/src/view/styles/variables.scss';
+
+.RequestItem {
+    background-color: $white;
+    border-radius: 10px ;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    height: 65px;
+    transition: 150ms;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            & .title {
+                font-weight: 700;
+            }
+
+            & .info {
+                font-size: 0.8rem;
+                color: rgba(0,0,0, 0.2);
+                line-height: 1rem;
+            }
+        }
+    }
+
+    &__control {
+       
+        &__complete {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            & button {
+                background-color: $bg;
+                width: calc(50% - 5px);
+                border-radius: 10px;
+                padding: 1rem;
+                color: $main;
+                transition: all 300ms;
+
+                &:hover {
+                    color: $white;
+                    background-color: $main;
+                    transition: all 300ms;
+                }
+            }
+        } 
+
+        &__reply {
+            background: $main;
+            border-radius: 10px;
+            padding: 1rem;
+            width: 100%;
+            margin-top: 1rem;
+            color:  $white;
+            justify-content: center;
+            transition: display 1000ms;
+        }
+    }
+}
+
+.in {
+    height: 130px;
+    transition: 150ms;
+}
+
+@media screen and (max-width: 1500px) {
+    .RequestItem {
+        height: 55px;
+
+        &__content__left {
+
+            & .title {
+                font-size: 0.8rem;
+            }
+        }
+        
+
+        &__control {
+
+            &__complete {
+            margin-top: 0.6rem;
+
+                & button {
+                    padding: 0.6rem;
+                }
+            }
+
+            &__reply {
+                padding: 0.6rem;
+                margin-top: 0.6rem;
+            }
+        }
+    }
+
+    .in {
+        height: 110px;
+        transition: 150ms;
+    }
+}

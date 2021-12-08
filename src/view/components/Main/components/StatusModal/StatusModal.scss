@@ -1,0 +1,27 @@
+@import '/src/view/styles/variables.scss';
+
+.statusModal {
+    position: absolute;
+    z-index: 10;
+    padding: 1rem;
+    background-color: $grassgreen;
+    color: $white;
+    border-radius: 10px;
+    top: 5%;
+    left:48%;
+    transform:translate(-48%, -50%);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    & .checkbox {
+        width: 20px;
+        height: 20px;
+        background-image: url(/src/assets/images/svg/ok-icon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 20px;
+    }
+
+}

@@ -1,0 +1,18 @@
+@import './mixins.scss';
+
+// Geometria
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Thin', 100);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-ExtraLight', 200);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Light', 300);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Regular', 400);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Medium', 500);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Bold', 700);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-ExtraBold', 800);
+// Geometria Italic
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-ThinItalic', 100, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-ExtraLightItalic', 200, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-LightItalic', 300, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-Italic', 400, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-MediumItalic', 500, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-BoldItalic', 700, italic);
+@include font-face('Geometria', 'src/assets/fonts/Geometria/Geometria-ExtraBoldItalic', 800, italic);

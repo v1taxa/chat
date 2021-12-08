@@ -1,0 +1,85 @@
+@import '/src/view/styles/variables.scss';
+
+
+.messagecard__wrap {
+    width: 100%;
+    display: flex;
+}
+
+.messagecard {
+    min-width: 200px;
+    max-width: 55%;
+    display: flex;
+    margin-right: 10px;
+
+    &__avatar {
+        width: 70px;
+
+        &__icon {
+            background-color: $black ;
+            align-items: center;
+            color: $white;
+            padding: 15px;
+            border-radius: 100%;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 25px;
+        }
+    }
+
+    &__body {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        &__author {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        &__message {
+            padding: 1rem;
+            margin-bottom: 10px;
+            line-height: 1.5rem;
+            width: fit-content;
+            display: flex;
+        }
+
+        &__date {
+            font-size: 0.8rem;
+            color: $darkgrey;
+            padding: 0 1rem;
+            display: flex;
+            min-width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .messagecard {
+
+        &__avatar {
+
+            &__icon {
+                font-size: 0.9rem;
+                width: 40px;
+                height: 40px;
+                align-items: center;
+                }
+        }
+
+        &__body {
+
+            &__author {
+                font-size: 0.9rem;
+            }
+
+            &__message {
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

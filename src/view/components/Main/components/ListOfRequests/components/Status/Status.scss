@@ -1,0 +1,37 @@
+@import '/src/view/styles/variables.scss';
+
+.status {
+    padding: 0.4em 1em;
+    background-color: red;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    
+    &__new {
+        background-color: $main;
+        color: $white
+    }
+
+    &__inProgress {
+         background-color: $grassgreen;
+        color: $white
+    }
+
+    &__completed {
+         background-color: $orchid;
+        color: $black
+    }
+
+    &__hold {
+         background-color: $orchid;
+        color: $darkgrey
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .status {
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,43 @@
+@import 'src/view/styles/abstract.scss';
+
+.button {
+    @apply py-4 px-5;
+
+    @apply font-bold;
+    font-size: 1rem;
+    line-height: 1.37;
+    transition: all $transition;
+
+    &--primary {
+        border: 1px solid $red;
+        background: $red;
+        color: $white;
+
+        &:hover {
+            background: darken($red, 10);
+            color: $white;
+        }
+    }
+
+    &--default {
+        border: 1px solid $red;
+        color: $red;
+
+        &:hover {
+            background: $red;
+            color: $white;
+        }
+    }
+
+    &.button--link {
+        display: block;
+        text-align: center;
+    }
+
+    &.button--disabled {
+        background: $darkgrey;
+        border-color: $darkgrey;
+        color: $black;
+        cursor: default;
+    }
+}

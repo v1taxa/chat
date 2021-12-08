@@ -1,0 +1,12 @@
+
+.hint {
+    margin: auto;
+    width: 300px;
+    text-align: center;
+
+    &__head {
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+    }
+}

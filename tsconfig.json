@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./build",
+    "sourceMap": true,
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "dom",
+      "esnext",
+      "webworker"
+    ],
+    "typeRoots": [
+      "./node_modules/@types",
+    ],
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
